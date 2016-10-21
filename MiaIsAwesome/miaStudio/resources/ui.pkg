@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE PACKAGE SYSTEM "package.dtd">
+<PACKAGE NAME="ui" METAMODEL="MVC" NUMBER="3"
+>
+	<fileHeader version="6" toolName="Mia-Generation" toolVersion="9.2.1"/>
+	<SCENARIO NAME="test" VISIBILITY="public" META_OBJECT="Action" CATEGORY="default">
+		<SERVICE_CALL NAME="current" PACKAGE="System" META_OBJECT="Action"/>
+	</SCENARIO>
+	<SCRIPT NAME="Interface" META_OBJECT="Model" CATEGORY="default" FILE_ENCODING="UTF-8" VISIBILITY="private">
+		<TEXT><![CDATA[
+package com.mia.banque.model;
+
+public interface [[fileName]] {
+
+}
+]]></TEXT>
+		<PROPERTY NAME="Filename"/>
+	</SCRIPT>
+	<SCRIPT NAME="Interface$Filename" META_OBJECT="Model" CATEGORY="default">
+		<TEXT><![CDATA[
+result.txt
+]]></TEXT>
+	</SCRIPT>
+	<SCRIPT NAME="fileName" META_OBJECT="Model" CATEGORY="default">
+		<TEXT><![CDATA[
+[[name]]
+]]></TEXT>
+	</SCRIPT>
+	<METAMODELS_INFO_CACHE>
+		<METAMODEL_IMPORT CLAUSE="com.mia.formation.mvc.*" RELATED_METAS="NamedElement,View,ModelProperty,Model,Action,UIApplication"/>
+		<METAMODEL_CONTAINER_QNAME CQNAME="mvc" RELATED_METAS="NamedElement,View,ModelProperty,Model,Action,UIApplication"/>
+	</METAMODELS_INFO_CACHE>
+</PACKAGE>
